@@ -1,0 +1,4 @@
+evdev
+asyncio
+aiohttp
+python-dotenv
