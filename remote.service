@@ -1,0 +1,19 @@
+[Unit]
+Description=Bluetooth Remote Service
+After=network.target
+
+[Service]
+Type=simple
+User=remote
+Group=remote
+WorkingDirectory=/opt/remote
+
+ExecStart=/opt/remote/.venv/bin/python /opt/remote/main.py
+
+Restart=always
+RestartSec=5
+
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target

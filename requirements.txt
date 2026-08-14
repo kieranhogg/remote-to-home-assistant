@@ -1,0 +1,5 @@
+evdev
+asyncio
+aiohttp
+python-dotenv
+sounddevice
